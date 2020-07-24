@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Words"
+    android:background="@color/colorPrimary">
+
+    <EditText
+        android:id="@+id/wordLife"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Word Here"
+        android:textAlignment="center"
+        android:textColor="@color/color_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/def"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="29dp"
+        android:text="Definition from Oxford Dictionary"
+        android:textAlignment="center"
+        android:textColor="@color/color_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findMeaning"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/merriamDef"
+        android:layout_width="256dp"
+        android:layout_height="217dp"
+        android:layout_marginBottom="166dp"
+        android:text="Searching..."
+        android:textColor="@color/color_white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/findMeaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Find Meaning"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wordLife" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
