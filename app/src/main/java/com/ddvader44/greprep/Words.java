@@ -148,7 +148,7 @@ public class Words extends AppCompatActivity {
             }catch (JSONException e)
             {
                 e.printStackTrace();
-                merDef.setText(e.getMessage());
+                merDef.setText("No such word found!");
             }
 
         }
